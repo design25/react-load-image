@@ -1,0 +1,17 @@
+import React from 'react';
+import ImageLoader from 'react-load-image';
+ 
+function Preloader(props) {
+  return <img src="spinner.gif" />;
+}
+ 
+React.render((
+  <ImageLoader
+    src="/path/to/image.jpg"
+  >
+    <img />
+    <div>Error!</div>
+    <Preloader />
+  </ImageLoader>
+), document.body);
+ 
