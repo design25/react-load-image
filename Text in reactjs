@@ -1,0 +1,20 @@
+class Intro extends React.Component {
+  render() {
+    return (
+    	<Style>
+      	{`
+          .intro {
+            font-size: 40px;
+          }
+        `}
+   
+        <p className="intro">CSS-in-JS made simple -- just Style It and nee to add some text.</p>
+    	</Style>
+    );
+  }
+}
+
+ReactDOM.render(
+  <Intro />,
+  document.getElementById('container')
+);
